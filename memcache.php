@@ -1,7 +1,7 @@
 <?php
 
 $memcache = new Memcache;
-$memcache->connect('localhost', 11211) or die ("Could not connect");
+$memcache->connect('jkredis.redis.cache.windows.net', 11211) or die ("Could not connect");
 
 $version = $memcache->getVersion();
 echo "Server's version: ".$version."<br/>\n";
